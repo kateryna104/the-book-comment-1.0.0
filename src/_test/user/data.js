@@ -1,7 +1,7 @@
 const user = {
     userInput: {
-        lastName: 'testFirstName',
-        firstName: 'testLaslName'
+        lastName: 'testLastName',
+        firstName: 'testFirstName'
     }
 }
  module.exports = { user }
