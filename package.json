@@ -2,8 +2,9 @@
   "name": "the-book-comment-1.0.0",
   "version": "1.0.0",
   "main": "src/index.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha src/_test/user/userCreate.spec.js",
     "start": "nodemon src/index.js"
   },
   "keywords": [],
