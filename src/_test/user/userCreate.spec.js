@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const { userCreateQ } = require('./queries')
 const { user } = require('./data')
-const gqlRequest = require('./gqlRequest')
+const gqlRequest = require('../gqlRequest')
 
 
 let respData =null;
@@ -10,7 +10,7 @@ describe('USER CREATE', () => {
     describe('USER CREATE - POSITIVE TESTS', () => {
       it('user create all fields' , (done) => {
           postData = {
-              querry: userCreateQ,
+              query: userCreateQ,
               variables: user
           }
 
