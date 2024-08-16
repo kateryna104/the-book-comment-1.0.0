@@ -6,4 +6,13 @@ const userCreateQ = `mutation UserCreate($userInput: UserFields) {
   }
  }`
 
-module.exports = { userCreateQ }
+const userGetByIdQ = `query UserGetById($userId: ID!) {
+  userGetById(userId: $userId) {
+    firstName
+    lastName
+    _id
+  }
+}`
+
+
+module.exports = { userCreateQ, userGetByIdQ }
